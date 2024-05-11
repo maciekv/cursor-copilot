@@ -18,10 +18,13 @@ export class UsersController {
   createUser(@Body() user: User): User {
     return this.usersService.createUser(user);
   }
-
   @Get()
   findAllUsers(): User[] {
-    return this.usersService.findAllUsers();
+    const users = this.usersService.findAllUsers();
+    if (users.length === 0) {
+      throw new Error('No users found.');
+    }
+    return users;
   }
 
   @Get(':id')

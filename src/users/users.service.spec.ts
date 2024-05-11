@@ -18,6 +18,7 @@ describe('createUser', () => {
       name: 'New User',
       email: 'new.user@example.com',
       phone: '456-789-0123',
+      birthDate: new Date('2000-01-01'), // Added birthDate as it is required in User entity
     };
     const service = new UsersService();
     expect(service.createUser(newUser)).toEqual(newUser);

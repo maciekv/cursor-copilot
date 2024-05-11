@@ -9,18 +9,21 @@ export class UsersService {
       name: 'John Doe',
       email: 'john.doe@example.com',
       phone: '123-456-7890',
+      birthDate: new Date('1990-01-01'),
     },
     {
       id: 2,
       name: 'Jane Smith',
       email: 'jane.smith@example.com',
       phone: '234-567-8901',
+      birthDate: new Date('1991-02-02'),
     },
     {
       id: 3,
       name: 'Alice Johnson',
       email: 'alice.johnson@example.com',
       phone: '345-678-9012',
+      birthDate: new Date('1992-03-03'),
     },
   ];
 
